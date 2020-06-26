@@ -1,0 +1,10 @@
+  
+from itertools import count, cycle
+
+prog_lang = list(input("inter 5 lang")).split()
+iter = cycle(prog_lang)
+for n in count():
+    if n>10:
+        break
+    else:
+        print(f"{n} - {next(iter)}")
